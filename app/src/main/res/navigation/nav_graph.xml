@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="alvin.note.ui.screens.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionLoginToRegister"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/actionLoginToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="alvin.note.ui.screens.register.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/actionRegisterToLogin"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/actionRegisterToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="alvin.note.ui.screens.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/actionHomeToLogin"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/actionHomeToNoteView"
+            app:destination="@id/noteViewFragment" />
+        <action
+            android:id="@+id/actionHomeToEdit"
+            app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/actionHomeToAdd"
+            app:destination="@id/addFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteViewFragment"
+        android:name="alvin.note.ui.screens.addEditView.view.NoteViewFragment"
+        android:label="NoteView"
+        tools:layout="@layout/fragment_note_view">
+        <argument
+            android:name="noteId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_noteViewFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="alvin.note.ui.screens.addEditView.add.AddFragment"
+        tools:layout="@layout/fragment_base_manage_add_edit"
+        android:label="Add" >
+        <action
+            android:id="@+id/actionAddToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="alvin.note.ui.screens.addEditView.edit.EditFragment"
+        tools:layout="@layout/fragment_base_manage_add_edit"
+        android:label="Edit" >
+        <argument
+            android:name="noteId"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionEditToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="alvin.note.ui.screens.profile.ProfileFragment"
+        android:label="Profile" />
+</navigation>

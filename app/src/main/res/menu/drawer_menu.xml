@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/homeFragment"
+        android:actionLayout="@layout/layout_menu"
+        app:showAsAction="always" />
+    <item android:title="@string/profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_person"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_menu" />
+    <item android:title="@string/logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_menu" />
+</menu>

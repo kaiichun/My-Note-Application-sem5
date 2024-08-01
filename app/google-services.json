@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444666591035",
+    "project_id": "fc-noteapplication-2024",
+    "storage_bucket": "fc-noteapplication-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444666591035:android:5fbfaedb95bae69b9d291e",
+        "android_client_info": {
+          "package_name": "alvin.note"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn6OksfAWkJksyb2riuNUuJivCIpmyzmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
