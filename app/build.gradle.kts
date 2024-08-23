@@ -66,6 +66,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:$navigation_version")
     implementation("androidx.fragment:fragment-ktx:1.8.1")
 
+    // Dagger
     val dagger_version = "2.51.1"
     implementation("com.google.dagger:hilt-android:$dagger_version")
     kapt("com.google.dagger:hilt-android-compiler:$dagger_version")
